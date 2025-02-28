@@ -1,8 +1,8 @@
-export const Card = ({ width,height, img, title,className, text }) => {
+export const Card = ({ classDiv, img, title,classNameImg, text }) => {
   return (
-    <div className={`p-2 border-2 border-gray-950/[.1] rounded-xl gap-2 ${height} ${width} flex flex-col`}>
+    <div className={`p-2 ${classDiv} border-2 border-gray-950/[.1] rounded-xl gap-2 flex flex-col`}>
       <img
-        className={`self-center ${className}`}
+        className={`self-center ${classNameImg}`}
         src={img}
       />
       <h2 className="font-bold">{title}</h2>
