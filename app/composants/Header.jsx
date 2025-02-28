@@ -7,7 +7,7 @@ export const Header = () => {
       className="flex bg-gray-900 h-1 fixed top-0 left-0 right-0 justify-between items-center font-semibold text-[25px] z-10 p-5 shadow-md"
     >
       <button
-        className="outline-none"
+        className="outline-none hover:text-white"
         onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
       >
         Hazem
