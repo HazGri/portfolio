@@ -4,10 +4,19 @@
 
 html,
 body {
-  height: 100%;
-  background-color: #030723;
-  color: whitesmoke;
+  color: #d3e7f6;
+  padding: 0;
+  margin: 0;
 }
+
+body {
+  background: url("/images/Moonlit Asteroid.jpg");
+  background-size: cover; /* Ajoute le point-virgule ici */
+  background-position: center;
+  position: relative; /* Optionnel, pour centrer l'image */
+}
+
+
 
 @layer base {
   :root {

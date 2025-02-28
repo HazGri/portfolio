@@ -11,14 +11,16 @@ export const HeaderBio = () => {
         />
         <div>
           <p>Hazem Gherissi</p>
-          <p>Developpeur web junior</p>
+          <p className="italic">Developpeur web junior</p>
         </div>
       </div>
 
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ipsum
-        officiis explicabo labore est suscipit iusto fugiat, numquam, ut
-        similique cumque omnis sunt quod impedit vel facere tempore aut quo.
+        After 10 years in the French Navy, I’m now embarking on a career
+        transition into web development. My development course begins in April, but
+        I’ve already started self-learning and gaining hands-on experience in
+        the field. I’m excited to apply my skills, discipline, and passion for
+        continuous learning to this new path.
       </p>
     </div>
   );

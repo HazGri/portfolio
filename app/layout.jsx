@@ -24,9 +24,9 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html className="h-full" lang="en">
+    <html lang="en">
       <body
-        className={`${geistSans.variable}${anekTelugu}${geistMono.variable} antialiased h-full`}
+        className={`${geistSans.variable} ${anekTelugu} ${geistMono.variable} antialiased h-full`}
       >
         {children}
       </body>
