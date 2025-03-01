@@ -46,8 +46,8 @@ export function Projects() {
         "A virtual library where you can manage your books (add, remove) and leave reviews for each one. The site features full CRUD functionality for easy and efficient management.",
       img: "/images/pocketLibrary.png",
       techno: {
-        clss_one: "md:size-12 sm:size-16 size-18 lg:size-12",
-        clss_two: "md:size-12 sm:size-16 size-18 lg:size-12",
+        clss_one: "md:size-12 sm:size-16 size-12 lg:size-12",
+        clss_two: "md:size-12 sm:size-16 size-12 lg:size-12",
         clss_three: "md:size-12 sm:size-16 size-18 lg:size-10",
         img_one: "/images/nodejs-svgrepo-com.svg",
         img_two: "/images/mongodb-svgrepo-com.svg",
