@@ -1,6 +1,6 @@
 export const Footer = () => {
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex flex-col sm:flex-row gap-4 justify-between items-center">
       <div className="mb-4 ml-2 flex flex-col">
         <p className="text-md font-bold">Contact me</p>
         <a href="mailto:hazemgherissi@gmail.com">
