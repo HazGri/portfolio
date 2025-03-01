@@ -14,8 +14,8 @@ export default function Home() {
       <p className="my-9 font-bold text-4xl">My projects</p>
       <Projects />
       <p className="mt-24 font-bold text-4xl">The stack I'm building</p>
-      <Grid/>
-      <Footer/>
+      <Grid />
+      <Footer />
     </div>
   );
 }

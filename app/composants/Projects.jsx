@@ -48,7 +48,7 @@ export function Projects() {
       techno: {
         clss_one: "md:size-12 sm:size-16 size-12 lg:size-12",
         clss_two: "md:size-12 sm:size-16 size-12 lg:size-12",
-        clss_three: "md:size-12 sm:size-16 size-18 lg:size-10",
+        clss_three: "md:size-12 sm:size-16 size-10 lg:size-10",
         img_one: "/images/nodejs-svgrepo-com.svg",
         img_two: "/images/mongodb-svgrepo-com.svg",
         img_three: "/images/icons8-bootstrap.svg",
