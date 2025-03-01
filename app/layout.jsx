@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         className={`${geistSans.variable} ${anekTelugu} ${geistMono.variable} antialiased px-3 sm:px-0 h-full`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
