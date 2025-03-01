@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${anekTelugu} ${geistMono.variable} antialiased px-2 sm:px-0 h-full`}
+        className={`${geistSans.variable} ${anekTelugu} ${geistMono.variable} antialiased px-3 h-full`}
       >
         {children}
         <Analytics />
