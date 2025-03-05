@@ -17,10 +17,10 @@ export const HeaderBio = () => {
 
       <p>
         After 10 years in the French Navy, I’m now embarking on a career
-        transition into web development. My development course begins in April, but
-        I’ve already started self-learning and gaining hands-on experience in
-        the field. I’m excited to apply my skills, discipline, and passion for
-        continuous learning to this new path.
+        transition into web development. My development course begins in April,
+        but I’ve already started self-learning and gaining hands-on experience
+        in the field. I’m excited to apply my skills, discipline, and passion
+        for continuous learning to this new path.
       </p>
     </div>
   );

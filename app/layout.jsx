@@ -18,8 +18,20 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Hazem Gherissi Portfolio",
-  description: "Hazem Gherissi Portfolio",
+  title: "Hazem Gherissi | Développeur web junior",
+  description:
+   "Développeur web junior passionné. Découvrez mes projets et mon parcours en développement web.",
+  keywords:
+    "Hazem Gherissi, développeur web, junior, React, Next.js, Node.js, portfolio",
+  author: "Hazem Gherissi",
+  openGraph: {
+    title: "Hazem Gherissi | Développeur web",
+    description:
+      "Développeur web junior passionné. Découvrez mes projets et mon parcours en développement web.",
+    url: "https://hazemgherissi.com",
+    type: "website",
+    image: "/images/photo-profil-cv.png",
+  }
 };
 
 export default function RootLayout({ children }) {
