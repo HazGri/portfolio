@@ -15,7 +15,22 @@ export function Projects() {
   const [projects, setProjects] = useState([
     {
       id: 0,
+      title: "Health Donald",
+      link: "https://google.com/",
+      description:
+        "A movie search site where you can simply input a movie title to retrieve information about it.",
+      img: "/images/healthDonald.png",
+      techno: {
+        clss_one: null,
+        clss_two: null,
+        img_one: null,
+        img_two: null,
+      },
+    },
+    {
+      id: 1,
       title: "Movie Finder",
+      link: "https://melvynx.com/",
       description:
         "A movie search site where you can simply input a movie title to retrieve information about it.",
       img: "/images/movieFinder.png",
@@ -27,10 +42,11 @@ export function Projects() {
       },
     },
     {
-      id: 1,
+      id: 2,
       title: "Image Editor",
+      link: "https://melvynx.com/",
       description:
-        "An online tool that allows you to modify the padding, border, and shadow of an image, with the option to download the edited image.",
+        "An online tool that allows you to edit an image with the option to download the edited version.",
       img: "/images/imgEditor.png",
       techno: {
         clss_one: null,
@@ -40,25 +56,27 @@ export function Projects() {
       },
     },
     {
-      id: 2,
+      id: 3,
       title: "Pocket Library",
+      link: "https://melvynx.com/",
       description:
-        "A virtual library where you can manage your books (add, remove) and leave reviews for each one. The site features full CRUD functionality for easy and efficient management.",
+        "A virtual library where you can manage your books (add, remove and delete).",
       img: "/images/pocketLibrary.png",
       techno: {
-        clss_one: "md:size-12 sm:size-16 size-12 lg:size-12",
-        clss_two: "md:size-12 sm:size-16 size-12 lg:size-12",
-        clss_three: "md:size-12 sm:size-16 size-10 lg:size-10",
+        clss_one: "md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
+        clss_two: " md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
+        clss_three: " md:size-8 sm:size-12 size-8 mb-2 ",
         img_one: "/images/nodejs-svgrepo-com.svg",
         img_two: "/images/mongodb-svgrepo-com.svg",
         img_three: "/images/icons8-bootstrap.svg",
       },
     },
     {
-      id: 3,
+      id: 4,
       title: "Apple Timer",
+      link: "https://melvynx.com/",
       description:
-        "A reproduction of the Apple Timer, allowing users to add and manage multiple timers simultaneously, ideal for tracking several events at once.",
+        "A reproduction of the Apple Timer, allowing users to add and manage multiple timers simultaneously.",
       img: "/images/appleTimer.png",
       techno: {
         clss_one: null,
@@ -79,18 +97,20 @@ export function Projects() {
           >
             <Card className="overflow-hidden h-full">
               <CardContent className="relative p-0 h-full w-fit cursor-pointer">
-                <Project
-                  titre={project.title}
-                  description={project.description}
-                  img={project.img}
-                  techno={project.techno}
-                />
+                <a href={project.link}>
+                  <Project
+                    titre={project.title}
+                    description={project.description}
+                    img={project.img}
+                    techno={project.techno}
+                  />
+                </a>
               </CardContent>
             </Card>
           </CarouselItem>
         ))}
       </CarouselContent>
-      <CarouselPrevious/>
+      <CarouselPrevious />
       <CarouselNext />
     </Carousel>
   );
