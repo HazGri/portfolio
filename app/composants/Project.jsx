@@ -19,11 +19,11 @@ export const Project = ({ titre, description, img, techno }) => {
           <img src={techno.img_three} className={techno.clss_three + " pb-2"} />
         </div>
       </div>
-          <img
-            className="z-[49]  blur-2xl transition-all duration-300 group-hover:blur-none h-full w-full object-cover"
-            alt="image du projet"
-            src={img}
-          />
+            <img
+              className="z-[49]  blur-2xl transition-all duration-300 group-hover:blur-none h-full w-full object-cover"
+              alt="image du projet"
+              src={img}
+            />
     </div>
   );
 };

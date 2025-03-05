@@ -16,9 +16,9 @@ export function Projects() {
     {
       id: 0,
       title: "Health Donald",
-      link: "https://google.com/",
+      link: "/",
       description:
-        "A movie search site where you can simply input a movie title to retrieve information about it.",
+        "A platform where users can purchase fictional burgers and manage their cart.",
       img: "/images/healthDonald.png",
       techno: {
         clss_one: null,
@@ -30,7 +30,7 @@ export function Projects() {
     {
       id: 1,
       title: "Movie Finder",
-      link: "https://melvynx.com/",
+      link: "/",
       description:
         "A movie search site where you can simply input a movie title to retrieve information about it.",
       img: "/images/movieFinder.png",
@@ -44,7 +44,7 @@ export function Projects() {
     {
       id: 2,
       title: "Image Editor",
-      link: "https://melvynx.com/",
+      link: "/",
       description:
         "An online tool that allows you to edit an image with the option to download the edited version.",
       img: "/images/imgEditor.png",
@@ -58,7 +58,7 @@ export function Projects() {
     {
       id: 3,
       title: "Pocket Library",
-      link: "https://melvynx.com/",
+      link: "/",
       description:
         "A virtual library where you can manage your books (add, remove and delete).",
       img: "/images/pocketLibrary.png",
@@ -74,7 +74,7 @@ export function Projects() {
     {
       id: 4,
       title: "Apple Timer",
-      link: "https://melvynx.com/",
+      link: "https://apple-timer-rose.vercel.app",
       description:
         "A reproduction of the Apple Timer, allowing users to add and manage multiple timers simultaneously.",
       img: "/images/appleTimer.png",
@@ -87,6 +87,18 @@ export function Projects() {
     },
   ]);
 
+  const [isLinkDisabled, setIsLinkDisabled] = useState(false);
+
+  const handleLinkClick = (e, link) => {
+    e.preventDefault();
+
+    setIsLinkDisabled(true);
+
+    setTimeout(() => {
+      window.location.href = link;
+    }, 500);
+  };
+
   return (
     <Carousel className="w-10/12 self-center">
       <CarouselContent className="-ml-1">
@@ -97,7 +109,10 @@ export function Projects() {
           >
             <Card className="overflow-hidden h-full">
               <CardContent className="relative p-0 h-full w-fit cursor-pointer">
-                <a href={project.link}>
+                <a
+                  href={isLinkDisabled ? "#" : project.link} // Lien désactivé si isLinkDisabled
+                  onClick={(e) => handleLinkClick(e, project.link)} // Gère le clic
+                >
                   <Project
                     titre={project.title}
                     description={project.description}
