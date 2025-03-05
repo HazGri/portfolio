@@ -16,7 +16,7 @@ export function Projects() {
     {
       id: 0,
       title: "Health Donald",
-      link: "/",
+      link: "https://health-donald.vercel.app/",
       description:
         "A platform where users can purchase fictional burgers and manage their cart.",
       img: "/images/healthDonald.png",
@@ -30,7 +30,7 @@ export function Projects() {
     {
       id: 1,
       title: "Movie Finder",
-      link: "/",
+      link: "https://movie-finder-tau-ten.vercel.app/",
       description:
         "A movie search site where you can simply input a movie title to retrieve information about it.",
       img: "/images/movieFinder.png",
@@ -44,7 +44,7 @@ export function Projects() {
     {
       id: 2,
       title: "Image Editor",
-      link: "/",
+      link: "https://image-editor-ten-pi.vercel.app/",
       description:
         "An online tool that allows you to edit an image with the option to download the edited version.",
       img: "/images/imgEditor.png",
