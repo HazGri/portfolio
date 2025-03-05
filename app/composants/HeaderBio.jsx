@@ -11,7 +11,7 @@ export const HeaderBio = () => {
         />
         <div>
           <p>Hazem Gherissi</p>
-          <p className="italic">Developpeur web junior</p>
+          <p className="italic">Developer web junior</p>
         </div>
       </div>
 
