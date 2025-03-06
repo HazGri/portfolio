@@ -14,13 +14,23 @@ export const Header = () => {
       </button>
       <div>
         <ul className="flex gap-5 text-base">
-          <a className="hover:text-white" href="https://www.linkedin.com/in/hazem-g-884824304/">
+          <a
+            className="hover:text-white"
+            href="https://www.linkedin.com/in/hazem-g-884824304/"
+          >
             <li>Linkedin</li>
           </a>
           <a className="hover:text-white" href="https://github.com/HazGri">
             <li>GitHub</li>
           </a>
-          <li>CV</li>
+
+          <a
+            className="hover:text-white"
+            href="/Gherissi-Hazem-CV.pdf"
+            download="Gherissi-Hazem-CV.pdf"
+          >
+            <li>CV</li>
+          </a>
         </ul>
       </div>
     </header>

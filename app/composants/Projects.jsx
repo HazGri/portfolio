@@ -111,7 +111,8 @@ export function Projects() {
               <CardContent className="relative p-0 h-full w-fit cursor-pointer">
                 <a
                   href={isLinkDisabled ? "#" : project.link} // Lien désactivé si isLinkDisabled
-                  onClick={(e) => handleLinkClick(e, project.link)} // Gère le clic
+                  onClick={(e) => handleLinkClick(e, project.link)}
+                  className="focus:outline-none focus:ring-0" // Gère le clic
                 >
                   <Project
                     titre={project.title}
