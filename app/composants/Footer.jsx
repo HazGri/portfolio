@@ -6,6 +6,7 @@ export const Footer = () => {
         <a href="mailto:hazemgherissi@gmail.com">
           <p className="font-semi-bold">hazemgherissi@gmail.com</p>
         </a>
+          <p className="text-sm">06.29.15.12.31</p>
       </div>
       <div className="flex gap-2">
       </div>

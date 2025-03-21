@@ -7,7 +7,7 @@ export const HeaderBio = () => {
         <img
           className="w-[150px]"
           alt="photo de profil"
-          src="/images/photo-profil-cv.png"
+          src="/images/photo-profil-cv.webp"
         />
         <div>
           <p>Hazem Gherissi</p>
