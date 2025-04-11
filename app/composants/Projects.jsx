@@ -29,6 +29,20 @@ export function Projects() {
     },
     {
       id: 1,
+      title: "Find Your Stack",
+      link: "https://find-your-stack.vercel.app/",
+      description:
+      "An AI-powered tool that allows you to find the best stack for your project.",
+      img: "/images/findYourStack.png",
+      techno: {
+        clss_one: null,
+        clss_two: null,
+        img_one: null,
+        img_two: null,
+      },
+    },
+    {
+      id: 2,
       title: "Movie Finder",
       link: "https://movie-finder-tau-ten.vercel.app/",
       description:
@@ -42,25 +56,11 @@ export function Projects() {
       },
     },
     {
-      id: 2,
-      title: "Image Editor",
-      link: "https://image-editor-ten-pi.vercel.app/",
-      description:
-        "An online tool that allows you to edit an image with the option to download the edited version.",
-      img: "/images/imgEditor.png",
-      techno: {
-        clss_one: null,
-        clss_two: null,
-        img_one: null,
-        img_two: null,
-      },
-    },
-    {
       id: 3,
       title: "Pocket Library",
       link: "/",
       description:
-        "A virtual library where you can manage your books (add, remove and delete).",
+      "A virtual library where you can manage your books (add, remove and delete).",
       img: "/images/pocketLibrary.png",
       techno: {
         clss_one: "md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
@@ -73,11 +73,11 @@ export function Projects() {
     },
     {
       id: 4,
-      title: "Apple Timer",
-      link: "https://apple-timer-rose.vercel.app",
+      title: "Image Editor",
+      link: "https://image-editor-ten-pi.vercel.app/",
       description:
-        "A reproduction of the Apple Timer, allowing users to add and manage multiple timers simultaneously.",
-      img: "/images/appleTimer.png",
+        "An online tool that allows you to edit an image with the option to download the edited version.",
+      img: "/images/imgEditor.png",
       techno: {
         clss_one: null,
         clss_two: null,

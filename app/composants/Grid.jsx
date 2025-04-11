@@ -31,10 +31,10 @@ export const Grid = () => {
           />
         <Card
           classDiv={"col-span-2"}
-          text={"I chose to focus on Node.js with MongoDB and PostgreSQL to learn both NoSQL and SQL approaches, giving me flexibility depending on the project needs."}
+          text={"I'm using Next.js as my backend framework, along with MongoDB and PostgreSQL, to gain experience with both NoSQL and SQL databases. This gives me more flexibility depending on the project's requirements."}
           classNameImg={"size-20"}
           title={"Back-end"}
-          img={"/images/node-js-svgrepo-com.svg"}
+          img={"/images/nextjs.svg"}
         />
     </div>
   );
