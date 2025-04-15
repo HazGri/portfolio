@@ -14,9 +14,7 @@ export const Project = ({ titre, description, img, techno }) => {
             : description}
         </p>
         <div className="flex gap-2 items-center">
-          <img src={techno.img_one} className={techno.clss_one + " pb-2"} />
-          <img src={techno.img_two} className={techno.clss_two + " pb-2"} />
-          <img src={techno.img_three} className={techno.clss_three + " pb-2"} />
+        
         </div>
       </div>
             <img

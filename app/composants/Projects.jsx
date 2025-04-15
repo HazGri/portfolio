@@ -15,6 +15,22 @@ export function Projects() {
   const [projects, setProjects] = useState([
     {
       id: 0,
+      title: "Log My Jump",
+      link: "https://log-my-jump.vercel.app/",
+      description:
+      "LogMyJump is a virtual skydiving logbook to track jumps and compete on a leaderboard with friends.",
+      img: "/images/logmyjump.png",
+      techno: {
+        clss_one: "md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
+        clss_two: " md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
+        clss_three: " md:size-8 sm:size-12 size-8 mb-2 ",
+        img_one: null,
+        img_two: null,
+        img_three: null,
+      },
+    },
+    {
+      id: 1,
       title: "Health Donald",
       link: "https://health-donald.vercel.app/",
       description:
@@ -28,7 +44,7 @@ export function Projects() {
       },
     },
     {
-      id: 1,
+      id: 2,
       title: "Find Your Stack",
       link: "https://find-your-stack.vercel.app/",
       description:
@@ -42,7 +58,7 @@ export function Projects() {
       },
     },
     {
-      id: 2,
+      id: 3,
       title: "Movie Finder",
       link: "https://movie-finder-tau-ten.vercel.app/",
       description:
@@ -53,22 +69,6 @@ export function Projects() {
         clss_two: null,
         img_one: null,
         img_two: null,
-      },
-    },
-    {
-      id: 3,
-      title: "Pocket Library",
-      link: "/",
-      description:
-      "A virtual library where you can manage your books (add, remove and delete).",
-      img: "/images/pocketLibrary.png",
-      techno: {
-        clss_one: "md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
-        clss_two: " md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
-        clss_three: " md:size-8 sm:size-12 size-8 mb-2 ",
-        img_one: "/images/nodejs-svgrepo-com.svg",
-        img_two: "/images/mongodb-svgrepo-com.svg",
-        img_three: "/images/icons8-bootstrap.svg",
       },
     },
     {
