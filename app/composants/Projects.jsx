@@ -15,32 +15,32 @@ export function Projects() {
   const [projects, setProjects] = useState([
     {
       id: 0,
+      title: "BreizhReport",
+      link: "https://breizhreport.vercel.app/",
+      description:
+        "Application de prévisions météo pour les spots de surf en Bretagne réalisée en React-SpringBoot.",
+      img: "/images/breizhReport.png",
+      techno: {
+        clss_one: null,
+        clss_two: null,
+        img_one: "/images/spring-boot-icon.svg",
+        img_two: "/images/react-svgrepo-com.svg",
+      },
+    },
+    {
+      id: 1,
       title: "Log My Jump",
       link: "https://log-my-jump.vercel.app/",
       description:
-      "LogMyJump is a virtual skydiving logbook to track jumps and compete on a leaderboard with friends.",
+        "Un carnet de saut virtuel pour suivre tes sauts en parachute et rivaliser avec tes amis grâce à un classement.",
       img: "/images/logmyjump.png",
       techno: {
         clss_one: "md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
         clss_two: " md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
         clss_three: " md:size-8 sm:size-12 size-8 mb-2 ",
-        img_one: null,
-        img_two: null,
+        img_one: "/images/nextjs.svg",
+        img_two: "/images/prisma.svg",
         img_three: null,
-      },
-    },
-    {
-      id: 1,
-      title: "Health Donald",
-      link: "https://health-donald.vercel.app/",
-      description:
-        "A platform where users can purchase fictional burgers and manage their cart.",
-      img: "/images/healthDonald.png",
-      techno: {
-        clss_one: null,
-        clss_two: null,
-        img_one: null,
-        img_two: null,
       },
     },
     {
@@ -48,27 +48,27 @@ export function Projects() {
       title: "Find Your Stack",
       link: "https://find-your-stack.vercel.app/",
       description:
-      "An AI-powered tool that allows you to find the best stack for your project.",
+        "Un outil alimenté par l’IA qui te permet de trouver la meilleure stack pour ton projet.",
       img: "/images/findYourStack.png",
       techno: {
         clss_one: null,
         clss_two: null,
-        img_one: null,
-        img_two: null,
+        img_one: "/images/react-svgrepo-com.svg",
+        img_two: "/images/openai.svg",
       },
     },
     {
       id: 3,
-      title: "Movie Finder",
-      link: "https://movie-finder-tau-ten.vercel.app/",
+      title: "Health Donald",
+      link: "https://health-donald.vercel.app/",
       description:
-        "A movie search site where you can simply input a movie title to retrieve information about it.",
-      img: "/images/movieFinder.png",
+        "Une plateforme où les utilisateurs peuvent commander des burgers fictifs et gérer leur panier.",
+      img: "/images/healthDonald.png",
       techno: {
         clss_one: null,
         clss_two: null,
-        img_one: null,
-        img_two: null,
+        img_one: "/images/react-svgrepo-com.svg",
+        img_two: "/images/tailwind-svgrepo-com.svg",
       },
     },
     {
@@ -76,13 +76,13 @@ export function Projects() {
       title: "Image Editor",
       link: "https://image-editor-ten-pi.vercel.app/",
       description:
-        "An online tool that allows you to edit an image with the option to download the edited version.",
+        "Un outil en ligne qui vous permet de modifier une image avec la possibilité de télécharger la version retouchée.",
       img: "/images/imgEditor.png",
       techno: {
         clss_one: null,
         clss_two: null,
-        img_one: null,
-        img_two: null,
+        img_one: "/images/react-svgrepo-com.svg",
+        img_two: "/images/tailwind-svgrepo-com.svg",
       },
     },
   ]);

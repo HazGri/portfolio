@@ -8,7 +8,7 @@ export const Grid = () => {
         title={"React"}
         img={"/images/react-svgrepo-com.svg"}
         text={
-          "During my self-learning, I focused on React to build fast and scalable web applications."
+          "Autodidacte, je me suis focalisé sur React pour développer des applications web rapides et évolutives."
         }
         classNameImg={"animate-[spin_10s_linear_infinite] size-20"}
       />
@@ -16,26 +16,28 @@ export const Grid = () => {
         title={"Tailwind CSS"}
         img={"/images/tailwind-svgrepo-com.svg"}
         text={
-          "I prefer Tailwind CSS for its utility-first approach, allowing quick, responsive, and maintainable designs."
+          "Je préfère Tailwind CSS pour son approche utility-first, qui permet de créer des designs rapides, responsives et faciles à maintenir."
         }
         classNameImg={"size-20"}
       />
-          <Card
-            classDiv={"row-span-2 flex flex-col gap-9"}
-            text={
-              "My military background has shaped my approach to challenges with discipline, resilience, and adaptability, qualities that I’m eager to apply as I move into the world of technology and development."
-            }
-            classNameImg={"size-20"}
-            title={"Experience"}
-            img={"/images/cruiser-military-svgrepo-com.svg"}
-          />
-        <Card
-          classDiv={"col-span-2"}
-          text={"I'm using Next.js as my backend framework, along with MongoDB and PostgreSQL, to gain experience with both NoSQL and SQL databases. This gives me more flexibility depending on the project's requirements."}
-          classNameImg={"size-20"}
-          title={"Back-end"}
-          img={"/images/nextjs.svg"}
-        />
+      <Card
+        classDiv={"row-span-2 flex flex-col gap-9"}
+        text={
+          "Mon expérience militaire a forgé ma rigueur, ma résilience et ma capacité d’adaptation, des qualités que je souhaite mettre à profit dans le domaine de la technologie et du développement."
+        }
+        classNameImg={"size-20"}
+        title={"Experience"}
+        img={"/images/cruiser-military-svgrepo-com.svg"}
+      />
+      <Card
+        classDiv={"col-span-2"}
+        text={
+          "J’utilise Node.js comme backend, avec MongoDB et PostgreSQL, pour acquérir de l’expérience à la fois avec les bases NoSQL et SQL. Cela me permet d’être plus flexible selon les besoins du projet."
+        }
+        classNameImg={"size-20"}
+        title={"Back-end"}
+        img={"/images/nodejs.svg"}
+      />
     </div>
   );
 };

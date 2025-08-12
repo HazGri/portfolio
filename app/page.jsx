@@ -11,9 +11,9 @@ export default function Home() {
     <div className="mt-24 min-h-full max-w-4xl mx-auto gap-5 flex flex-col">
       <Header />
       <HeaderBio />
-      <p className="my-9 font-bold text-4xl">My projects</p>
+      <p className="my-9 font-bold text-4xl">Mes projets</p>
       <Projects />
-      <p className="mt-24 font-bold text-4xl">The stack I'm building</p>
+      <p className="mt-24 font-bold text-4xl"> La stack que je développe</p>
       <Grid />
       <Footer />
     </div>

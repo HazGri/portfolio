@@ -3,12 +3,14 @@
 export const Project = ({ titre, description, img, techno }) => {
   return (
     <div className="h-full select-none relative group">
+      <img src={techno.img_one} className="h-4 absolute right-2 top-2" alt="" />
+      <img src={techno.img_two} className="h-4 absolute right-7 top-2" alt="" />
       <div className="font-bold z-[99] absolute inset-0 flex flex-col p-4 sm:justify-evenly justify-between transition-opacity duration-300 opacity-100 group-hover:opacity-0">
-        <h3 className="lg:text-base text-4xl text-black">{titre}</h3>
+        <h3 className="text-sm lg:text-base sm:text-4xl text-black">{titre}</h3>
         <p className="lg:text-xs hidden md:block text-gray-400 mt-2">
          {description}
         </p>
-        <p className="lg:text-xs md:hidden text-gray-400 mt-2">
+        <p className="text-xs sm:text-sm md:text-xs md:hidden text-gray-400 mt-2">
           {description.length > 150
             ? description.substring(0, 150) + "..."
             : description}
