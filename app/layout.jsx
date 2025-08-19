@@ -1,5 +1,5 @@
 import { Anek_Telugu, Geist, Geist_Mono } from "next/font/google";
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
 const anekTelugu = Anek_Telugu({
@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Hazem Gherissi | Développeur web junior",
   description:
-   "Développeur web junior passionné. Découvrez mes projets et mon parcours en développement web.",
+    "Développeur web junior passionné. Découvrez mes projets et mon parcours en développement web.",
   keywords:
     "Hazem Gherissi, développeur web, junior, React, Next.js, Node.js, portfolio",
   author: "Hazem Gherissi",
@@ -30,8 +30,8 @@ export const metadata = {
       "Développeur web junior passionné. Découvrez mes projets et mon parcours en développement web.",
     url: "https://hazemgherissi.com",
     type: "website",
-    image: "https://hazemgherissi.com/images/photo-profil-cv.webp",
-  }
+    image: "https://hazemgherissi.com/images/tooltip.png",
+  },
 };
 
 export default function RootLayout({ children }) {
