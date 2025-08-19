@@ -30,7 +30,7 @@ export const metadata = {
       "Développeur web junior passionné. Découvrez mes projets et mon parcours en développement web.",
     url: "https://hazemgherissi.com",
     type: "website",
-    image: "/images/photo-profil-cv.png",
+    image: "/images/photo-profil-cv.webp",
   }
 };
 
