@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Hazem Gherissi | Développeur web junio",
+  title: "Hazem Gherissi | Développeur web junior",
   description:
     "Développeur web junior passionné. Découvrez mes projets et mon parcours en développement web.",
   keywords:
