@@ -12,8 +12,8 @@ export const Grid = () => {
       enableMagnetism={true}
       clickEffect={true}
       spotlightRadius={300}
-      particleCount={12}
-      glowColor="132, 0, 255"
+      particleCount={30}
+      glowColor="220, 140, 255"
     />
   );
 };
