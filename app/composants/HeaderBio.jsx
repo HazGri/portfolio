@@ -17,7 +17,7 @@ export const HeaderBio = () => {
             text={[
               "Développeur Web",
               "Votre futur alternant ?",
-              "Edition limitée",
+              "Édition limitée",
             ]}
             typingSpeed={75}
             pauseDuration={1500}
