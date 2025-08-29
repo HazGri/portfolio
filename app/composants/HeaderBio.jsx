@@ -27,7 +27,7 @@ export const HeaderBio = () => {
         </div>
       </div>
 
-      <p>
+      <p className="mt-[3rem]">
         Après 10 ans dans la Marine nationale, je change de cap pour le
         développement web. J’ai déjà posé mes premiers projets en autodidacte et
         je suis prêt à mettre ma rigueur, ma capacité d’adaptation et ma soif

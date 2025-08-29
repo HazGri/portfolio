@@ -100,7 +100,7 @@ export function Projects() {
   };
 
   return (
-    <Carousel className="w-10/12 self-center">
+    <Carousel className="w-10/12 self-center mt-[2rem]">
       <CarouselContent className="-ml-1">
         {projects.map((project) => (
           <CarouselItem
