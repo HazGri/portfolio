@@ -8,7 +8,7 @@ const MOBILE_BREAKPOINT = 768;
 
 const cardData = [
   {
-    color: "transparent",
+    color: "#294E5C",
     title: "Node.js",
     description:
       "J’utilise Node.js comme backend, avec MongoDB et PostgreSQL, pour acquérir de l’expérience à la fois avec les bases NoSQL et SQL.",
@@ -18,7 +18,7 @@ const cardData = [
     classNameTxt: "lg:hidden",
   },
   {
-    color: "transparent",
+    color: "#294E5C",
     title: "SpringBoot",
     description:
       "Je me forme actuellement à Spring Boot afin d’élargir le champ de mes compétences.",
@@ -28,7 +28,7 @@ const cardData = [
     classNameTxt: "lg:hidden",
   },
   {
-    color: "transparent",
+    color: "#294E5C",
     title: "React",
     description:
       "Autodidacte, je me suis focalisé sur React pour développer des applications web rapides et évolutives.",
@@ -37,7 +37,7 @@ const cardData = [
     classNameImg: "animate-[spin_10s_linear_infinite] h-12 sm:h-20",
   },
   {
-    color: "transparent",
+    color: "#294E5C",
     title: "Expérience",
     description:
       "Mon expérience militaire a forgé ma rigueur, ma résilience et mon adaptabilité, que je souhaite mettre au service du développement technologique.",
@@ -46,7 +46,7 @@ const cardData = [
     classNameImg: "h-12 sm:h-20 ",
   },
   {
-    color: "transparent",
+    color: "#294E5C",
     title: "Next.js",
     description:
       "J’ai construit mes premiers projets avec Next.js, dont la puissance me permet de développer des applications performantes et flexibles. ",
@@ -56,7 +56,7 @@ const cardData = [
     classNameTxt: "lg:hidden",
   },
   {
-    color: "transparent",
+    color: "#294E5C",
     title: "Tailwind CSS",
     description: "J'adore Tailwind... tout simplement.",
     label: "Protection",
