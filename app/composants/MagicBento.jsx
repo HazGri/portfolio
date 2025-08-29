@@ -864,24 +864,30 @@ const MagicBento = ({
                   <span className="card__label text-base">{card.label}</span>
                 </div>
                 <div className="card__content flex flex-col relative text-white">
+                  {card.image && (
+                    <img
+                      src={card.image}
+                      className={card.classNameImg}
+                      alt={card.title}
+                    />
+                  )}
+                </div>
+                <div
+                  className={"card__content flex flex-col relative text-white"}
+                >
                   <h3
-                    className={`card__title font-normal text-base m-0 mb-1 ${
+                    className={`card__title font-normal text-base m-0 mb-1 hidden sm:block ${
                       textAutoHide ? "text-clamp-1" : ""
                     }`}
                   >
                     {card.title}
                   </h3>
-                  {card.image && (
-                    <img
-                      src={card.image}
-                      className="animate-[spin_10s_linear_infinite] w-24 h-24"
-                      alt={card.title}
-                    />
-                  )}
                   <p
-                    className={`card__description text-xs leading-5 opacity-90 ${
+                    className={`card__description text-xs ${
                       card.classNameTxt
-                    } ${textAutoHide ? "text-clamp-2" : ""}`}
+                    } leading-5 opacity-90 ${
+                      textAutoHide ? "text-clamp-2" : ""
+                    }`}
                   >
                     {card.description}
                   </p>
