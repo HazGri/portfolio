@@ -17,7 +17,7 @@ export default function Home() {
         delay={150}
         animateBy="words"
         direction="top"
-        className="my-9 font-bold text-4xl"
+        className="my-9 font-bold text-4xl mt-[3rem]"
       />
       <Projects />
       <BlurText
@@ -25,7 +25,7 @@ export default function Home() {
         delay={150}
         animateBy="words"
         direction="top"
-        className="mt-24 font-bold text-4xl"
+        className="mt-24 font-bold text-4xl mb-[3rem]"
       />
       <Grid />
       <Footer />
