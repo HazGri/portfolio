@@ -17,10 +17,11 @@ export const Header = () => {
           <a
             className="hover:text-white"
             href="https://www.linkedin.com/in/hazem-g-884824304/"
+            target="_blank"
           >
             <li>Linkedin</li>
           </a>
-          <a className="hover:text-white" href="https://github.com/HazGri">
+          <a className="hover:text-white" href="https://github.com/HazGri" target="_blank">
             <li>GitHub</li>
           </a>
 
