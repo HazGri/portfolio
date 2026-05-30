@@ -9,11 +9,17 @@ const config = {
   theme: {
     extend: {
       fontFamily: {
-        anek: "var(--font-anek-telugu)",
-        geist: "var(--font-geist-sans)",
-        mono: "var(--font-geist-mono)",
+        display: "var(--font-archivo)",
+        sans: "var(--font-archivo)",
+        mono: "var(--font-plex-mono)",
       },
       colors: {
+        ink: "#05131a",
+        "ink-soft": "#0a2531",
+        paper: "#e7f0f2",
+        signal: "#5fd0e0",
+        "signal-dim": "#356f7b",
+        beacon: "#e8a04b",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
         card: {

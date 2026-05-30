@@ -1,133 +1,151 @@
 "use client";
-import { Project } from "./Project";
 import { useState } from "react";
-import * as React from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+import { AnimatePresence, motion } from "motion/react";
+import { Reveal } from "./Reveal";
+import { SectionTitle } from "./SectionTitle";
 
-export function Projects() {
-  const [projects, setProjects] = useState([
-    {
-      id: 0,
-      title: "BreizhReport",
-      link: "https://breizhreport.vercel.app/",
-      description:
-        "Application de prévisions météo pour les spots de surf en Bretagne réalisée en React-SpringBoot.",
-      img: "/images/breizhReport.png",
-      techno: {
-        clss_one: null,
-        clss_two: null,
-        img_one: "/images/spring-boot-icon.svg",
-        img_two: "/images/react-svgrepo-com.svg",
-      },
-    },
-    {
-      id: 1,
-      title: "Log My Jump",
-      link: "https://log-my-jump.vercel.app/",
-      description:
-        "Un carnet de saut virtuel pour suivre tes sauts en parachute et rivaliser avec tes amis grâce à un classement.",
-      img: "/images/logmyjump.png",
-      techno: {
-        clss_one: "md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
-        clss_two: " md:size-12 sm:size-16 size-12 mb-2 lg:size-12",
-        clss_three: " md:size-8 sm:size-12 size-8 mb-2 ",
-        img_one: "/images/nextjs.svg",
-        img_two: "/images/prisma.svg",
-        img_three: null,
-      },
-    },
-    {
-      id: 2,
-      title: "Find Your Stack",
-      link: "https://find-your-stack.vercel.app/",
-      description:
-        "Un outil alimenté par l’IA qui te permet de trouver la meilleure stack pour ton projet.",
-      img: "/images/findYourStack.png",
-      techno: {
-        clss_one: null,
-        clss_two: null,
-        img_one: "/images/react-svgrepo-com.svg",
-        img_two: "/images/openai.svg",
-      },
-    },
-    {
-      id: 3,
-      title: "Health Donald",
-      link: "https://health-donald.vercel.app/",
-      description:
-        "Une plateforme où les utilisateurs peuvent commander des burgers fictifs et gérer leur panier.",
-      img: "/images/healthDonald.png",
-      techno: {
-        clss_one: null,
-        clss_two: null,
-        img_one: "/images/react-svgrepo-com.svg",
-        img_two: "/images/tailwind-svgrepo-com.svg",
-      },
-    },
-    {
-      id: 4,
-      title: "Image Editor",
-      link: "https://image-editor-ten-pi.vercel.app/",
-      description:
-        "Un outil en ligne qui vous permet de modifier une image avec la possibilité de télécharger la version retouchée.",
-      img: "/images/imgEditor.png",
-      techno: {
-        clss_one: null,
-        clss_two: null,
-        img_one: "/images/react-svgrepo-com.svg",
-        img_two: "/images/tailwind-svgrepo-com.svg",
-      },
-    },
-  ]);
+const projets = [
+  {
+    code: "01",
+    titre: "Internes de Breizh",
+    lien: "https://frontend-6z3.pages.dev/",
+    tags: ["C#", ".NET", "Docker", "React"],
+    img: "/images/asso-internes.png",
+    note: "Le site de l'association des internes en médecine de Bretagne. Back-end C# / .NET conteneurisé, front React. En production.",
+  },
+  {
+    code: "02",
+    titre: "Stash",
+    lien: "https://budget-enveloppes-gold.vercel.app",
+    tags: ["Next.js", "TypeScript", "PostgreSQL"],
+    img: "/images/stash.png",
+    note: "Budget par enveloppes connecté à ma banque (DSP2), avec catégorisation automatique des dépenses et une mascotte écureuil.",
+  },
+  {
+    code: "03",
+    titre: "Log My Jump",
+    lien: "https://log-my-jump.vercel.app/",
+    tags: ["Next.js", "Prisma", "PostgreSQL"],
+    img: "/images/logmyjump.png",
+    note: "Carnet de sauts pour parachutistes : profils, classement et système d'amis.",
+  },
+  {
+    code: "04",
+    titre: "BreizhReport",
+    lien: "https://breizhreport.vercel.app/",
+    tags: ["React", "Spring Boot"],
+    img: "/images/breizhReport.png",
+    note: "Prévisions météo pour les spots de surf en Bretagne. Intégration d'APIs tierces, back-end Spring Boot.",
+  },
+];
 
-  const [isLinkDisabled, setIsLinkDisabled] = useState(false);
-  const handleLinkClick = (e, link) => {
-    e.preventDefault();
-    setIsLinkDisabled(true);
-
-    setTimeout(() => {
-      window.open(link, "_blank", "noopener,noreferrer");
-    }, 500);
-  };
+export const Projects = () => {
+  const [actif, setActif] = useState(0);
 
   return (
-    <Carousel className="w-10/12 self-center mt-[2rem]">
-      <CarouselContent className="-ml-1">
-        {projects.map((project) => (
-          <CarouselItem
-            key={project.id}
-            className="pl-3 md:basis-1/2 lg:basis-1/3"
-          >
-            <Card className="overflow-hidden h-full">
-              <CardContent className="relative p-0 h-full w-fit cursor-pointer">
-                <a
-                  href={isLinkDisabled ? "#" : project.link} // Lien désactivé si isLinkDisabled
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => handleLinkClick(e, project.link)}
-                  className="focus:outline-none focus:ring-0" // Gère le clic
-                >
-                  <Project
-                    titre={project.title}
-                    description={project.description}
-                    img={project.img}
-                    techno={project.techno}
+    <section id="projets" className="mt-28 sm:mt-36">
+      <SectionTitle index="01">Projets</SectionTitle>
+
+      <div className="mt-8 grid gap-10 md:grid-cols-[1fr_minmax(380px,46%)]">
+        {/* liste des waypoints */}
+        <ul className="flex flex-col">
+          {projets.map((p, i) => (
+            <li key={p.code}>
+              <a
+                href={p.lien}
+                target="_blank"
+                rel="noopener noreferrer"
+                onMouseEnter={() => setActif(i)}
+                onFocus={() => setActif(i)}
+                className="group block border-t border-[var(--line)] py-6 first:border-t-0"
+              >
+                <div className="flex items-baseline gap-3">
+                  <span
+                    className={`mono text-sm transition-colors ${
+                      actif === i ? "text-signal" : "text-paper/40"
+                    }`}
+                  >
+                    {p.code}
+                  </span>
+                  <h3
+                    className={`font-display text-2xl font-bold tracking-tight transition-colors sm:text-3xl ${
+                      actif === i ? "text-signal" : "text-paper"
+                    }`}
+                  >
+                    {p.titre}
+                  </h3>
+                  <span className="leader hidden sm:block" />
+                  <span className="mono hidden text-xs text-paper/50 transition-colors group-hover:text-signal sm:inline">
+                    ouvrir ↗
+                  </span>
+                </div>
+
+                <p className="mt-3 max-w-prose text-paper/70">{p.note}</p>
+
+                <div className="mt-3 flex flex-wrap gap-2">
+                  {p.tags.map((t) => (
+                    <span
+                      key={t}
+                      className="mono border border-[var(--line-strong)] px-2 py-0.5 text-[0.7rem] uppercase tracking-wider text-paper/70"
+                    >
+                      {t}
+                    </span>
+                  ))}
+                </div>
+
+                {/* aperçu intégré sur mobile uniquement */}
+                <div className="mt-4 overflow-hidden border border-[var(--line-strong)] md:hidden">
+                  <img src={p.img} alt={p.titre} className="w-full" />
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+
+        {/* cadre d'aperçu, collant, desktop */}
+        <div className="hidden md:block">
+          <div className="sticky top-28">
+            <div className="relative border border-[var(--line-strong)] p-2">
+              <Corners />
+              <div className="relative aspect-[16/10] w-full overflow-hidden bg-ink-soft">
+                <AnimatePresence mode="wait">
+                  <motion.img
+                    key={projets[actif].img}
+                    src={projets[actif].img}
+                    alt={projets[actif].titre}
+                    initial={{ opacity: 0, scale: 1.02 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0 }}
+                    transition={{ duration: 0.4, ease: "easeOut" }}
+                    className="absolute inset-0 h-full w-full object-cover object-top"
                   />
-                </a>
-              </CardContent>
-            </Card>
-          </CarouselItem>
-        ))}
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+                </AnimatePresence>
+              </div>
+              <div className="mt-2 flex items-center justify-between px-1">
+                <span className="mono text-xs text-signal">
+                  {projets[actif].code} · {projets[actif].titre}
+                </span>
+                <span className="mono text-xs text-paper/50">
+                  {projets[actif].tags.join(" / ")}
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   );
-}
+};
+
+// petits crochets d'angle, comme un cadre de visée
+const Corners = () => {
+  const base = "absolute h-3 w-3 border-signal";
+  return (
+    <>
+      <span className={`${base} left-0 top-0 border-l border-t`} />
+      <span className={`${base} right-0 top-0 border-r border-t`} />
+      <span className={`${base} bottom-0 left-0 border-b border-l`} />
+      <span className={`${base} bottom-0 right-0 border-b border-r`} />
+    </>
+  );
+};
