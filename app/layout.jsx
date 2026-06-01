@@ -29,7 +29,7 @@ export const metadata = {
     type: "website",
     images: [
       {
-        url: "https://hazemgherissi.com/images/tooltip.png",
+        url: "https://hazemgherissi.com/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Hazem Gherissi, développeur full-stack C# / .NET",
@@ -43,7 +43,7 @@ export const metadata = {
       "Développeur full-stack C# / .NET basé à Brest. Ancien Marine nationale.",
     images: [
       {
-        url: "https://hazemgherissi.com/images/tooltip.png",
+        url: "https://hazemgherissi.com/og-image.jpg",
         alt: "Hazem Gherissi, développeur full-stack C# / .NET",
       },
     ],
