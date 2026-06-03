@@ -8,7 +8,7 @@ const projets = [
   {
     code: "01",
     titre: "Internes de Breizh",
-    lien: "https://frontend-6z3.pages.dev/",
+    lien: "https://internesdebreizh.fr/",
     tags: ["C#", ".NET", "Docker", "React"],
     img: "/images/asso-internes.png",
     note: "Le site de l'association des internes en médecine de Bretagne. Back-end C# / .NET conteneurisé, front React. En production.",
