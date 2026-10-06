@@ -261,7 +261,7 @@ export default function SiteVitrine() {
             </p>
             <a
               href={`mailto:${email}?subject=Projet%20de%20site%20vitrine`}
-              className="mt-3 inline-block font-display text-3xl font-bold tracking-tight text-paper underline-offset-8 transition-colors hover:text-signal hover:underline sm:text-5xl"
+              className="mt-3 inline-block break-all font-display text-2xl font-bold tracking-tight text-paper underline-offset-8 transition-colors hover:text-signal hover:underline sm:text-5xl"
             >
               {email}
             </a>
