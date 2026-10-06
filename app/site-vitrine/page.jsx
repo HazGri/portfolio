@@ -6,7 +6,7 @@ import { Footer } from "../composants/Footer";
 
 const titre = "Création de site vitrine à Quimper, Finistère · Hazem Gherissi";
 const description =
-  "Site vitrine sur mesure pour artisans, commerçants, indépendants et associations en Bretagne : moderne, rapide, que vous modifiez vous-même. À partir de 1 500 € HT, livré en 2 à 3 semaines.";
+  "Site internet pour artisans, commerçants, indépendants et associations en Bretagne : moderne, rapide, adapté au mobile. Site d'une page dès 450 € HT en 5 jours, site vitrine complet dès 1 500 € HT.";
 
 export const metadata = {
   title: titre,
@@ -29,22 +29,54 @@ export const metadata = {
   },
 };
 
-const inclus = [
+const formules = [
   {
-    k: "Pages",
-    v: "Jusqu'à 5 pages (accueil, services, à propos, actualités, contact), adaptées au mobile.",
+    nom: "Starter",
+    prix: "450 € HT",
+    pour: "Pour être présent en ligne rapidement.",
+    delai: "Livré en 5 jours",
+    inclus: [
+      {
+        k: "Page",
+        v: "Une seule page : présentation, services, horaires et plan, adaptée au mobile.",
+      },
+      {
+        k: "Contact",
+        v: "Un bouton d'appel ou un formulaire de contact.",
+      },
+      {
+        k: "Visibilité",
+        v: "Le référencement de base sur Google.",
+      },
+      {
+        k: "Cadre",
+        v: "Vous fournissez textes, logo et photos. Une série de corrections incluse.",
+      },
+    ],
   },
   {
-    k: "Autonomie",
-    v: "Un espace d'administration pour modifier vous-même vos textes, photos et actualités, sans développeur.",
-  },
-  {
-    k: "Visibilité",
-    v: "Un formulaire de contact et le référencement de base (Google, fiche d'établissement).",
-  },
-  {
-    k: "Mise en ligne",
-    v: "Publication du site et une heure de prise en main en visio.",
+    nom: "Site vitrine",
+    prix: "1 500 € HT",
+    pour: "Pour un site complet que vous faites vivre vous-même.",
+    delai: "Livré en 2 à 3 semaines",
+    inclus: [
+      {
+        k: "Pages",
+        v: "Jusqu'à 5 pages (accueil, services, à propos, actualités, contact), adaptées au mobile.",
+      },
+      {
+        k: "Autonomie",
+        v: "Un espace d'administration pour modifier vous-même vos textes, photos et actualités, sans développeur.",
+      },
+      {
+        k: "Visibilité",
+        v: "Un formulaire de contact et le référencement de base (Google, fiche d'établissement).",
+      },
+      {
+        k: "Mise en ligne",
+        v: "Publication du site et une heure de prise en main en visio.",
+      },
+    ],
   },
 ];
 
@@ -52,7 +84,7 @@ const options = [
   "Pages supplémentaires",
   "Prise de rendez-vous en ligne",
   "Espace adhérents ou réservé aux membres",
-  "Maintenance et hébergement au mois (environ 30 €/mois)",
+  "Hébergement et maintenance à partir de 20 €/mois",
 ];
 
 const etapes = [
@@ -97,8 +129,8 @@ export default function SiteVitrine() {
                 Demander un devis
               </a>
               <span className="mono text-sm text-paper/60">
-                À partir de <span className="text-signal">1 500 € HT</span> ·
-                livré en 2 à 3 semaines
+                Dès <span className="text-signal">450 € HT</span> pour un site
+                d'une page, livré en 5 jours
               </span>
             </div>
           </Reveal>
@@ -106,30 +138,41 @@ export default function SiteVitrine() {
 
         {/* ce qui est inclus */}
         <section className="mt-28 sm:mt-36">
-          <SectionTitle index="01">Ce qui est inclus</SectionTitle>
-          <Reveal delay={0.05}>
-            <div className="mt-8 border border-[var(--line-strong)] p-5 sm:p-8">
-              <p className="label mb-6 text-signal-dim">
-                Forfait à partir de 1 500 € HT
-              </p>
-              <ul className="flex flex-col gap-5">
-                {inclus.map(({ k, v }) => (
-                  <li
-                    key={k}
-                    className="grid gap-1 sm:grid-cols-[10rem_1fr] sm:gap-6"
-                  >
-                    <span className="mono text-xs uppercase tracking-wider text-signal">
-                      {k}
+          <SectionTitle index="01">Deux formules</SectionTitle>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {formules.map((f, i) => (
+              <Reveal key={f.nom} delay={0.05 + 0.07 * i}>
+                <div className="flex h-full flex-col border border-[var(--line-strong)] p-5 sm:p-7">
+                  <p className="label text-signal-dim">{f.nom}</p>
+                  <p className="mt-3 font-display text-3xl font-black tracking-tight text-paper sm:text-4xl">
+                    <span className="mono mr-2 align-middle text-xs font-normal uppercase tracking-wider text-paper/60">
+                      À partir de
                     </span>
-                    <span className="text-paper/85">{v}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </Reveal>
+                    {f.prix}
+                  </p>
+                  <p className="mt-2 text-paper/75">{f.pour}</p>
+                  <ul className="mt-6 flex flex-col gap-4">
+                    {f.inclus.map(({ k, v }) => (
+                      <li key={k} className="grid gap-1">
+                        <span className="mono text-xs uppercase tracking-wider text-signal">
+                          {k}
+                        </span>
+                        <span className="text-paper/85">{v}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mono mt-auto pt-6 text-sm text-paper/60">
+                    {f.delai}
+                  </p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
 
           <Reveal delay={0.1}>
-            <p className="label mb-4 mt-10 text-signal-dim">En option</p>
+            <p className="label mb-4 mt-10 text-signal-dim">
+              En option, pour les deux formules
+            </p>
             <div className="flex flex-wrap gap-2">
               {options.map((o) => (
                 <span
@@ -163,7 +206,8 @@ export default function SiteVitrine() {
             ))}
           </ol>
           <p className="mono mt-4 text-sm text-paper/60">
-            Délai indicatif : 2 à 3 semaines, selon le contenu fourni.
+            Délai indicatif : 5 jours pour la formule Starter, 2 à 3 semaines
+            pour le site vitrine, selon le contenu fourni.
           </p>
         </section>
 
