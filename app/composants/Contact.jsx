@@ -6,7 +6,6 @@ import { Footer } from "./Footer";
 const liens = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/hazem-g-884824304/" },
   { label: "GitHub", href: "https://github.com/HazGri" },
-  { label: "CV (PDF)", href: "/Gherissi-Hazem-CV.pdf" },
 ];
 
 export const Contact = () => {

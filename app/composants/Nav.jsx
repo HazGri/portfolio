@@ -46,13 +46,6 @@ export const Nav = () => {
               {l.label}
             </a>
           ))}
-          <a
-            href="/Gherissi-Hazem-CV.pdf"
-            download="Gherissi-Hazem-CV.pdf"
-            className="label border border-signal px-3 py-1.5 text-signal transition-colors hover:bg-signal hover:text-ink"
-          >
-            CV
-          </a>
         </nav>
       </div>
     </header>
