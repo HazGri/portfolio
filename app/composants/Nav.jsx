@@ -3,7 +3,7 @@
 const liens = [
   { label: "Site vitrine", href: "/site-vitrine" },
   { label: "Projets", href: "/#projets" },
-  { label: "Stack", href: "/#stack" },
+  { label: "Stack", href: "/#stack", desktopOnly: true },
   { label: "Contact", href: "/#contact" },
 ];
 
@@ -25,12 +25,14 @@ export const Nav = () => {
           </span>
         </a>
 
-        <nav className="flex items-center gap-4 sm:gap-6">
+        <nav className="flex items-center gap-5 sm:gap-6">
           {liens.map((l) => (
             <a
               key={l.href}
               href={l.href}
-              className="label text-paper/70 transition-colors hover:text-signal"
+              className={`label nav-link text-paper/70 transition-colors hover:text-signal ${
+                l.desktopOnly ? "hidden sm:inline" : ""
+              }`}
             >
               {l.label}
             </a>
