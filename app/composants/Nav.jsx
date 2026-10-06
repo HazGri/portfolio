@@ -1,9 +1,10 @@
 "use client";
 
 const liens = [
-  { label: "Projets", href: "#projets" },
-  { label: "Stack", href: "#stack" },
-  { label: "Contact", href: "#contact" },
+  { label: "Site vitrine", href: "/site-vitrine" },
+  { label: "Projets", href: "/#projets" },
+  { label: "Stack", href: "/#stack" },
+  { label: "Contact", href: "/#contact" },
 ];
 
 const externes = [
@@ -15,12 +16,12 @@ export const Nav = () => {
   return (
     <header className="fixed inset-x-0 top-0 z-40 border-b border-[var(--line-strong)] bg-ink/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-3">
-        <a href="#top" className="group flex items-center gap-2">
+        <a href="/" className="group flex items-center gap-2">
           <span className="flex h-6 w-6 items-center justify-center border border-signal text-[0.6rem] font-bold text-signal">
             HG
           </span>
           <span className="label hidden text-paper/70 transition-colors group-hover:text-signal sm:inline">
-            48°23′N&nbsp;&nbsp;4°29′W
+            47°59′N&nbsp;&nbsp;4°06′W
           </span>
         </a>
 

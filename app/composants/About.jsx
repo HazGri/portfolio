@@ -5,8 +5,8 @@ import { SectionTitle } from "./SectionTitle";
 const reperes = [
   ["Poste", "Dev full-stack @ Synapsy"],
   ["Stack", "C# / .NET · React"],
-  ["Base", "Brest (29)"],
-  ["Avant", "Marine nationale · 2016–2025"],
+  ["Base", "Quimper (29)"],
+  ["Avant", "Marine nationale · 2016 à 2025"],
 ];
 
 export const About = () => {

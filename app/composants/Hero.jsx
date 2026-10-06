@@ -21,7 +21,7 @@ export const Hero = () => {
       >
         <div>
           <motion.p variants={item} className="label mb-6 text-signal">
-            Relevé · Brest, 48°23′N 4°29′W
+            Relevé · Quimper, 47°59′N 4°06′W
           </motion.p>
 
           <motion.h1

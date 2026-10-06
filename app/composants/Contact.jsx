@@ -1,6 +1,7 @@
 "use client";
 import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
+import { Footer } from "./Footer";
 
 const liens = [
   { label: "LinkedIn", href: "https://www.linkedin.com/in/hazem-g-884824304/" },
@@ -15,7 +16,7 @@ export const Contact = () => {
 
       <Reveal delay={0.05}>
         <p className="mono mt-8 text-sm text-paper/60">
-          Une mission, une question, un café à Brest ?
+          Une mission, une question, un café à Quimper ?
         </p>
         <a
           href="mailto:hazemgherissi@gmail.com"
@@ -41,10 +42,7 @@ export const Contact = () => {
         </div>
       </Reveal>
 
-      <div className="mono mt-20 flex items-center justify-between border-t border-[var(--line)] py-6 text-xs text-paper/40">
-        <span>Hazem Gherissi</span>
-        <span>Fin de carte · Brest 48°23′N 4°29′W · 2026</span>
-      </div>
+      <Footer />
     </section>
   );
 };

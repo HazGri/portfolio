@@ -17,14 +17,14 @@ const plexMono = IBM_Plex_Mono({
 export const metadata = {
   title: "Hazem Gherissi · Développeur full-stack C# / .NET",
   description:
-    "Développeur full-stack C# / .NET basé à Brest. Projets, parcours et stack technique.",
+    "Développeur full-stack C# / .NET basé à Quimper. Projets, parcours et stack technique.",
   keywords:
-    "Hazem Gherissi, développeur full-stack, C#, .NET, ASP.NET Core, React, Next.js, Brest, portfolio",
+    "Hazem Gherissi, développeur full-stack, C#, .NET, ASP.NET Core, React, Next.js, Quimper, Finistère, création site vitrine, portfolio",
   author: "Hazem Gherissi",
   openGraph: {
     title: "Hazem Gherissi · Développeur full-stack C# / .NET",
     description:
-      "Développeur full-stack C# / .NET basé à Brest.",
+      "Développeur full-stack C# / .NET basé à Quimper.",
     url: "https://hazemgherissi.com",
     type: "website",
     images: [
@@ -40,7 +40,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Hazem Gherissi · Développeur full-stack C# / .NET",
     description:
-      "Développeur full-stack C# / .NET basé à Brest.",
+      "Développeur full-stack C# / .NET basé à Quimper.",
     images: [
       {
         url: "https://hazemgherissi.com/og-image.jpg",
