@@ -3,7 +3,7 @@ import { Reveal } from "./Reveal";
 import { SectionTitle } from "./SectionTitle";
 
 const reperes = [
-  ["Poste", "Dev full-stack @ Synapsy"],
+  ["Poste", "Dev full-stack · éditeur de logiciels"],
   ["Stack", "C# / .NET · React"],
   ["Base", "Quimper (29)"],
   ["Avant", "Marine nationale · 2016 à 2025"],
@@ -19,7 +19,8 @@ export const About = () => {
           <p className="text-lg leading-relaxed text-paper/85">
             Après près de dix ans dans la Marine nationale comme chef d'équipe
             fusilier marin, j'ai changé de cap pour le développement web.
-            Aujourd'hui développeur full-stack C# / .NET chez Synapsy, je conçois
+            Aujourd'hui développeur full-stack C# / .NET chez un éditeur de
+            logiciels de gestion, je conçois
             et je maintiens des applications de gestion au quotidien. J'amène à
             mes projets ce que la Marine m'a appris : de la rigueur, du
             sang-froid et le goût du travail bien fait.
