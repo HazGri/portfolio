@@ -14,7 +14,43 @@ const plexMono = IBM_Plex_Mono({
   weight: ["400", "500", "600"],
 });
 
+const donneesStructurees = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "https://hazemgherissi.com/#personne",
+      name: "Hazem Gherissi",
+      url: "https://hazemgherissi.com",
+      image: "https://hazemgherissi.com/images/photo-profil-cv.webp",
+      jobTitle: "Développeur full-stack C# / .NET",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Quimper",
+        addressRegion: "Bretagne",
+        addressCountry: "FR",
+      },
+      knowsAbout: ["C#", ".NET", "ASP.NET Core", "React", "Next.js", "PostgreSQL"],
+      sameAs: [
+        "https://www.linkedin.com/in/hazem-g-884824304/",
+        "https://github.com/HazGri",
+        "https://www.malt.fr/profile/hazemgherissi",
+      ],
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://hazemgherissi.com/#site",
+      url: "https://hazemgherissi.com",
+      name: "Hazem Gherissi",
+      inLanguage: "fr-FR",
+      publisher: { "@id": "https://hazemgherissi.com/#personne" },
+    },
+  ],
+};
+
 export const metadata = {
+  metadataBase: new URL("https://hazemgherissi.com"),
+  alternates: { canonical: "/" },
   title: "Hazem Gherissi · Développeur full-stack C# / .NET",
   description:
     "Développeur full-stack C# / .NET basé à Quimper. Projets, parcours et stack technique.",
@@ -54,6 +90,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body className={`${archivo.variable} ${plexMono.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(donneesStructurees) }}
+        />
         {children}
         <Analytics />
       </body>
