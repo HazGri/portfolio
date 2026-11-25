@@ -4,7 +4,6 @@ export default function sitemap() {
   const maintenant = new Date();
   return [
     { url: base, lastModified: maintenant, changeFrequency: "monthly", priority: 1 },
-    { url: `${base}/site-vitrine`, lastModified: maintenant, changeFrequency: "monthly", priority: 0.8 },
     { url: `${base}/mentions-legales`, lastModified: maintenant, changeFrequency: "yearly", priority: 0.2 },
   ];
 }

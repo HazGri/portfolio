@@ -55,7 +55,7 @@ export const metadata = {
   description:
     "Développeur full-stack C# / .NET basé à Quimper. Projets, parcours et stack technique.",
   keywords:
-    "Hazem Gherissi, développeur full-stack, C#, .NET, ASP.NET Core, React, Next.js, Quimper, Finistère, création site vitrine, portfolio",
+    "Hazem Gherissi, développeur full-stack, C#, .NET, ASP.NET Core, React, Next.js, Quimper, Finistère, portfolio",
   author: "Hazem Gherissi",
   openGraph: {
     title: "Hazem Gherissi · Développeur full-stack C# / .NET",

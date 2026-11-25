@@ -1,7 +1,6 @@
 "use client";
 
 const liens = [
-  { label: "Site vitrine", href: "/site-vitrine" },
   { label: "Projets", href: "/#projets" },
   { label: "Stack", href: "/#stack", desktopOnly: true },
   { label: "Contact", href: "/#contact" },
